@@ -11,9 +11,9 @@
     "check-format": "prettier . --check",
     "docker": "docker compose down --remove-orphans -v && docker compose up --build -d"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "@mikhailsdv",
+  "license": "MIT",
+  "description": "Telegram bot that reminds family subscription members about payment",
   "dependencies": {
     "grammy": "1.41.1"
   },
