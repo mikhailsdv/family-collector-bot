@@ -1,0 +1,7 @@
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: collector-bot
+    restart: unless-stopped
