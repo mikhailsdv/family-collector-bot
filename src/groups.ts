@@ -91,7 +91,7 @@ export const groups: GroupConfig[] = [
 
         <b>Суммы в валютах с человека</b>:
         ${convertedLinesText}
-        ${conversionUnavailable ? `\n${CONVERSION_UNAVAILABLE_TEXT}` : ""}
+        ${conversionUnavailable ? `${CONVERSION_UNAVAILABLE_TEXT}\n` : ""}
 
         <i>Пришлите квитанцию об оплате в этот чат</i>
       `);
@@ -127,15 +127,14 @@ export const groups: GroupConfig[] = [
 
         <b>Суммы в валютах с человека</b>:
         ${convertedLinesText}
-        ${conversionUnavailable ? `\n${CONVERSION_UNAVAILABLE_TEXT}` : ""}
-
+        ${conversionUnavailable ? `${CONVERSION_UNAVAILABLE_TEXT}\n` : ""}
         <i>Пришлите квитанцию об оплате в этот чат</i>
       `);
     },
     membersCount: 6,
-    paymentDayOfMonth: 18,
-    totalPrice: 8,
-    currency: "USD",
+    paymentDayOfMonth: 19,
+    totalPrice: 5000,
+    currency: "KZT",
     targetCurrencies: ["USD", "RUB", "KZT"],
   },
 ];
