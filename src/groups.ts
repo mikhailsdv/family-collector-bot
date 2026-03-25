@@ -132,7 +132,7 @@ export const groups: GroupConfig[] = [
       `);
     },
     membersCount: 6,
-    paymentDayOfMonth: 19,
+    paymentDayOfMonth: 18,
     totalPrice: 5000,
     currency: "KZT",
     targetCurrencies: ["USD", "RUB", "KZT"],
