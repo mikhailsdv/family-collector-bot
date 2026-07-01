@@ -53,13 +53,14 @@ export const testGroup: GroupConfig = {
       <b>Общая сумма подписки</b>: ${totalPrice} ${baseCurrency}/мес
 
       <b>Суммы в валютах с человека</b>:
-      ${convertedLinesText}${conversionUnavailable ? `\n\n${CONVERSION_UNAVAILABLE_TEXT}` : ""}
+      ${convertedLinesText}
+      ${conversionUnavailable ? `${CONVERSION_UNAVAILABLE_TEXT}\n` : ""}
 
       <i>Пришлите квитанцию об оплате в этот чат</i>
     `);
   },
   membersCount: 6,
-  paymentDayOfMonth: 12,
+  paymentDayOfMonth: 28,
   totalPrice: 5000,
   currency: "KZT",
   targetCurrencies: ["USD", "RUB", "KZT"],
@@ -92,12 +93,11 @@ export const groups: GroupConfig[] = [
         <b>Суммы в валютах с человека</b>:
         ${convertedLinesText}
         ${conversionUnavailable ? `${CONVERSION_UNAVAILABLE_TEXT}\n` : ""}
-
         <i>Пришлите квитанцию об оплате в этот чат</i>
       `);
     },
     membersCount: 6,
-    paymentDayOfMonth: 15,
+    paymentDayOfMonth: 28,
     totalPrice: 8,
     currency: "USD",
     targetCurrencies: ["USD", "RUB", "KZT"],
@@ -132,7 +132,7 @@ export const groups: GroupConfig[] = [
       `);
     },
     membersCount: 6,
-    paymentDayOfMonth: 18,
+    paymentDayOfMonth: 22,
     totalPrice: 5000,
     currency: "KZT",
     targetCurrencies: ["USD", "RUB", "KZT"],
